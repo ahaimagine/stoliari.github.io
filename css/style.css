@@ -181,9 +181,11 @@ p{
 /* end own style*/
 
 /* WORK-block */
-h2,h4,h5,p{
+h2,h4,h5,p,i{
   color: black;
 }
+
+
 
 .w-100{
   filter: grayscale(100%);
@@ -192,7 +194,8 @@ h2,h4,h5,p{
 
 .w-100:hover{
   filter: grayscale(0%);
-  -webkit-filter: grayscale(0%)
+  -webkit-filter: grayscale(0%);
+  scale: 102%;
 }
 
 span.x{
@@ -215,11 +218,36 @@ span.x{
   padding: 20px;
 }
 
+
+.why-handmade-description{
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 40vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+b {
+  color: blue;
+}
+
+.hand-made-class{
+  padding: 0;
+  height: 85vh;
+  border: 2px  var(--main-yellow); 
+}
+
+
+
+
 /* Contacts */
 
 .cont-bg-100vw {
   max-width: 100%;
-  background-image: url(../images/table-bg.jpeg);
+  background-image: url(../images/table-bg\ –\ копія.jpeg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -230,27 +258,29 @@ span.x{
   margin-top: 30px;
 }
 
+#contact a{
+  color: royalblue;
+}
+
 .fa-facebook {
   margin-left: 10px;
-  color: #3b5998;
+  color: #6707D5;
 
 }
 
 .fa-instagram {
   margin-right: 10px;
-  color: #d6249f;
+  color: #ED5E40;
   
 }
 
 .container-contacts {
-  height: 80vh;
+  height: 100vh;
   max-width: 100%;
   display: flex;
   text-align: center;
   flex-direction: column;
 }
-
-
 
 .container-contacts div{
   margin-bottom: 15px;
@@ -262,7 +292,7 @@ span.x{
 
 
 .sm-icons {
-  font-size: 40px;
+  font-size: 50px;
   
 }
 
@@ -272,21 +302,24 @@ span.x{
   font-weight: 400;
 }
 
+.text-above-form href{
+  color: var(--main-yellow);
+}
+
+
 .form {
   display: flex;
   flex-direction: column;
-  max-width: 270px;
+  max-width: 400px;
 }
 
 .form *{
-  padding: 15px auto;
+  padding: 10px;
   border: black 2px solid;
   color: #000000;
   border-radius: 3px;
   background: rgb(231, 224, 224);
-  padding-left: 10px;
-
-  
+  opacity: 0.7;
 }
 
 .form-submit {
@@ -300,12 +333,13 @@ span.x{
   background: var(--main-yellow);
   width: 35%;
   margin: 15px auto;
-  padding-left: 0;
+  padding-left: 0 auto;
+  opacity: 1;
 }
 
 
 
-/* Class for map */
+                           /* Class for map */
 
 #map {
   width: 100%;
@@ -324,9 +358,11 @@ span.x{
 
 
 
-
-
 /* Footer */
+
+#footer a{
+  color: black;
+}
 
 .footer-logo {
   display: flex;
@@ -353,14 +389,25 @@ span.x{
 }
 
 @media screen and (max-width: 991px) {
- 
+  .why-handmade-description {
+    max-width: 60vw;
+  }
 }
 
 @media screen and (max-width: 760px) {
-  
+  .why-handmade-description {
+    max-width: 80vw;
+  }
 }
 
 @media screen and (max-width: 575px) {
+  .why-handmade-description {
+    max-width: 100vw;
+  }
+
+  .hand-made-class{
+    height: 95vh;
+  }
   
 }
 

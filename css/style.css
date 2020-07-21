@@ -113,14 +113,13 @@ nav.black{
 
 
 #home{
-  background-image: url(../images/IMG_0066.jpg);
+  background-image: url(../images/туц3.jpg);
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  
 }
 
 
@@ -129,6 +128,7 @@ nav.black{
   width: 25%;
   margin-bottom: 2%;
   margin-top: 20vh;
+  opacity: 0;
   
 }
 
@@ -151,7 +151,9 @@ nav.black{
   margin: 50px auto;
   color: #000000;
   text-align: center;
-  
+  position: relative;
+  bottom: -10vh;
+  font-weight: bold;
 }
   
 p{
@@ -259,8 +261,11 @@ b {
 }
 
 #contact a{
-  color: royalblue;
+  color: rgb(15, 129, 206);
+  text-decoration: auto;
 }
+
+
 
 .fa-facebook {
   margin-left: 10px;
@@ -302,9 +307,9 @@ b {
   font-weight: 400;
 }
 
-.text-above-form href{
+/* .text-above-form  href{
   color: var(--main-yellow);
-}
+} */
 
 
 .form {
@@ -392,6 +397,11 @@ b {
   .why-handmade-description {
     max-width: 60vw;
   }
+
+  .text-section{
+    position: relative;
+    bottom: -25vh;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -409,6 +419,10 @@ b {
     height: 95vh;
   }
   
+  .text-section{
+    position: relative;
+    bottom: -25vh;
+  }
 }
 
 @media (max-width: 360px) {

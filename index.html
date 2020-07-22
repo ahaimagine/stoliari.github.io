@@ -10,6 +10,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
   <title >Stoliari</title>
 </head>
@@ -38,10 +39,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
   <!--HOME-->
   <section id="home" class="section">
-    <div class="content-container row-fluid">
-      <div class="logo">
-        <img src="../stoliari.github.io/images/logo-without-bg.png">
-      </div>
+    <div class="content-container ">
       <div class="text-section">
       Майстерня з проектування та виготовлення індивідуальних меблів з дерева. 
       <br>
@@ -52,6 +50,25 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
   <!--PRODUCTS-->
   <section id="products" class="section">
+       <div class="swiper-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-flex title-about">
+              <div class="main-title" >Продукція</div>
+            </div>
+          </div>
+        </div>
+       <div class="swiper-wrapper">
+           <div class="swiper-slide" ><img src="./images/caru/IMG_20200720_181135.jpg"></div>
+           <div class="swiper-slide" ><img src="./images/caru/IMG_20200720_181223.jpg"></div>
+           <div class="swiper-slide" ><img src="./images/caru/IMG_20200720_182327.jpg"></div>
+           <div class="swiper-slide" ><img src="./images/caru/IMG_20200720_183917.jpg"></div>
+           <div class="swiper-slide" ><img src="./images/caru/IMG_20200720_184106 (2).jpg"></div>
+           <div class="swiper-slide" ><img src="./images/caru/new1.jpg"></div>
+       </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
   </section>
    <!--PRODUCTS-->
 
@@ -297,7 +314,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
               <input placeholder="Введіть Ваше ім'я" type="text" name="name">
               <input placeholder="Введіть E-mail" type="email" name="email">
               <textarea cols="30" rows="5" placeholder="Введіть повідомлення" name="message"></textarea>
-              <button type="submit" class="form-btn">Відправити</button>
+              <button type="submit" class="form-btn">Надіслати</button>
            </form>
          </div>
         </div>
@@ -360,6 +377,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
   <script src="js/main.js.js"></script>  
+  <script src="https://unpkg.com/swiper/swiper-bundle.js" ></script> 
 
 
 

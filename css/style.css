@@ -124,14 +124,6 @@ nav.black{
 
 
 
-.logo{
-  width: 25%;
-  margin-bottom: 2%;
-  margin-top: 20vh;
-  opacity: 0;
-  
-}
-
 
 .navbar-inner{
   width: 100%;
@@ -152,7 +144,7 @@ nav.black{
   color: #000000;
   text-align: center;
   position: relative;
-  bottom: -10vh;
+  bottom: -65vh;
   font-weight: bold;
 }
   
@@ -181,6 +173,43 @@ p{
 
 
 /* end own style*/
+
+
+#products{
+  
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: white;
+  }
+
+  
+ .swiper-container {
+  width: 100%;
+  height: 100%; 
+  
+  }
+  .swiper-wrapper{
+    height: 400px;
+    width: 100%;
+  }
+  
+  .swiper-slide {
+  flex-shrink: 1!important;
+  position: relative;;
+  background-position: center;
+  cursor: grab;
+  
+  
+  }
+  .swiper-container img{
+    height: 70vh;
+    width: 300px;
+    align-self: center;
+    position: center;
+  }
 
 /* WORK-block */
 h2,h4,h5,p,i{
@@ -336,7 +365,7 @@ b {
 
 .form-btn {
   background: var(--main-yellow);
-  width: 35%;
+  width: 40%;
   margin: 15px auto;
   padding-left: 0 auto;
   opacity: 1;
@@ -344,7 +373,7 @@ b {
 
 
 
-                           /* Class for map */
+/* Class for map */
 
 #map {
   width: 100%;
@@ -400,7 +429,7 @@ b {
 
   .text-section{
     position: relative;
-    bottom: -25vh;
+    bottom: -60vh;
   }
 }
 
@@ -421,7 +450,7 @@ b {
   
   .text-section{
     position: relative;
-    bottom: -25vh;
+    bottom: -50vh;
   }
 }
 

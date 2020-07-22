@@ -1,8 +1,5 @@
 $(document).ready(function(){
-
-});
-
-$(window).on("scroll" , function() {
+ $(window).on("scroll" , function() {
     if($(window).scrollTop()) {
         $('nav').addClass('black');
         $('a').addClass('black');
@@ -16,9 +13,24 @@ $(window).on("scroll" , function() {
         $('navbar-brand').removeClass('black');
         $('.navbar-light .navbar-toggler').removeClass('black');
     }
-})
+ });
 
 
+ 
+  
+  let swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 30,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true}
+  });
+});
 (function() {
     const formEl = document.querySelector("#contactForm");
     formEl.addEventListener("submit", function(event) {
@@ -41,4 +53,5 @@ $(window).on("scroll" , function() {
             console.log(response, "from server")
         });
     });
-})();
+ })();
+

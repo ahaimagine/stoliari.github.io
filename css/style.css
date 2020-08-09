@@ -200,10 +200,16 @@ p{
   flex-shrink: 1!important;
   position: relative;;
   background-position: center;
-  cursor: grab;
-  
-  
+  /* cursor: grab; */
+
   }
+
+  .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+    color: white;
+  }
+  .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+  color: white;
+}
   .swiper-container img{
     height: 70vh;
     width: 300px;
@@ -226,7 +232,7 @@ h2,h4,h5,p,i{
 .w-100:hover{
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
-  scale: 102%;
+  transform: scale(1.02);
 }
 
 span.x{
